@@ -1,13 +1,14 @@
 {
   "name": "autocomplete-ygoproapi",
-  "main": "./lib/main",
-  "version": "0.3.1",
+  "main": "./lib/index",
+  "version": "0.4.0",
   "description": "Autocomplete provider for YGOPro API.",
   "keywords": [
     "ygopro",
     "autocomplete",
     "ygoproapi",
-    "yugioh"
+    "yugioh",
+    "edopro"
   ],
   "repository": "https://github.com/piface314/autocomplete-ygoproapi",
   "author": "piface314",
@@ -21,5 +22,26 @@
         "2.0.0": "getProvider"
       }
     }
+  },
+  "configSchema": {
+    "matchCaseForConstants": {
+      "type": "boolean",
+      "default": true
+    },
+    "suggestOptionalArguments": {
+      "type": "boolean",
+      "default": false
+    },
+    "showReturnTypes": {
+      "type": "boolean",
+      "default": true
+    },
+    "useSpacing": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {
+    "dapetcu21-luaparse": "^0.2.1"
   }
 }

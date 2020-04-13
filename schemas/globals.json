@@ -1,0 +1,29 @@
+{
+  "description": "Describes and defines completion for functions in the global scope.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [ "id", "desc", "args" ],
+    "properties": {
+      "id": { "type": "string" },
+      "argstr": { "type": "string" },
+      "desc": { "type": "string" },
+      "args": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [ "id", "type" ],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "type": "string" },
+            "opt": { "type": "boolean" }
+          }
+        }
+      },
+      "ret": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}
