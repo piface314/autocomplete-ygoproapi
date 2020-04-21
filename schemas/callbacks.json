@@ -3,12 +3,12 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [ "id", "desc", "used_as", "args" ],
+    "required": [ "id", "desc", "usedAs", "args" ],
     "properties": {
       "id": { "type": "string" },
       "desc": { "type": "string" },
-      "used_as": { "type": "string" },
-      "used_by": {
+      "usedAs": { "type": "string" },
+      "usedBy": {
         "type": "array",
         "items": { "type": "string" }
       },

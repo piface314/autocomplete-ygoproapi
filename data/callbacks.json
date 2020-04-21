@@ -2,7 +2,7 @@
   {
     "id": "initial_effect",
     "desc": "Called when the card is loaded to register the initial card effects.",
-    "used_as": "",
+    "usedAs": "",
     "args": [
       { "id": "c", "type": "Card", "desc": "the card that is being loaded" }
     ]
@@ -10,7 +10,7 @@
   {
     "id": "affval",
     "desc": "Used by generic effects that affect cards in some way, and checks whether that effect should affect the given card or not.",
-    "used_as": "value",
+    "usedAs": "value",
     "args": [
       { "id": "e", "type": "Effect", "desc": "the effect that might affect the card" },
       { "id": "c", "type": "Card", "desc": "a card that might be affected" }
@@ -20,7 +20,7 @@
   {
     "id": "condition",
     "desc": "Generic condition callback.",
-    "used_as": "condition",
+    "usedAs": "condition",
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -36,7 +36,7 @@
   {
     "id": "cost",
     "desc": "Generic cost callback.",
-    "used_as": "cost",
+    "usedAs": "cost",
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -53,7 +53,7 @@
   {
     "id": "target",
     "desc": "Generic target callback.",
-    "used_as": "target",
+    "usedAs": "target",
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -70,7 +70,7 @@
   {
     "id": "operation",
     "desc": "Generic operation callback.",
-    "used_as": "operation",
+    "usedAs": "operation",
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -85,7 +85,7 @@
   {
     "id": "filter",
     "desc": "Generic filter that can be used in many Group operations. Extra arguments passed to those operations are later passed to these filters.",
-    "used_as": "filter",
+    "usedAs": "filter",
     "args": [
       { "id": "c", "type": "Card", "desc": "a card from the Group being filtered" }
     ],
@@ -94,8 +94,8 @@
   {
     "id": "matpropcon",
     "desc": "Checks if an effect that changes properties of a card being used as material for a Special Summon can be applied.",
-    "used_as": "operation",
-    "used_by": [
+    "usedAs": "operation",
+    "usedBy": [
       "EFFECT_ADD_CODE", "EFFECT_CHANGE_CODE", "EFFECT_REMOVE_CODE",
       "EFFECT_ADD_SETCODE", "EFFECT_CHANGE_SETCODE",
       "EFFECT_ADD_TYPE", "EFFECT_CHANGE_TYPE", "EFFECT_REMOVE_TYPE",
@@ -111,8 +111,8 @@
   {
     "id": "matpropval",
     "desc": "Sets the value of a property of a card being used as material for a Special Summon.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_ADD_CODE", "EFFECT_CHANGE_CODE", "EFFECT_REMOVE_CODE",
       "EFFECT_ADD_SETCODE", "EFFECT_CHANGE_SETCODE",
       "EFFECT_ADD_TYPE", "EFFECT_CHANGE_TYPE", "EFFECT_REMOVE_TYPE",
@@ -128,8 +128,8 @@
   {
     "id": "matlvlval",
     "desc": "Sets the Level(s) a monster must be treated when used as material for a Special Summon. For Xyz Summon, this function can return multiple values.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_RITUAL_LEVEL", "EFFECT_SYNCHRO_LEVEL", "EFFECT_XYZ_LEVEL" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_RITUAL_LEVEL", "EFFECT_SYNCHRO_LEVEL", "EFFECT_XYZ_LEVEL" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "mc", "type": "Card", "desc": "card used as material" },
@@ -140,8 +140,8 @@
   {
     "id": "ctpermittg",
     "desc": "Checks if a specific counter can be placed on card c. Usually passed as argument to Card.EnableCounterPermit.",
-    "used_as": "target",
-    "used_by": [ "Card.EnableCounterPermit", "EFFECT_COUNTER_PERMIT" ],
+    "usedAs": "target",
+    "usedBy": [ "Card.EnableCounterPermit", "EFFECT_COUNTER_PERMIT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
@@ -151,8 +151,8 @@
   {
     "id": "ssprocgcon",
     "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
-    "used_as": "condition",
-    "used_by": [ "EFFECT_SPSUMMON_PROC_G" ],
+    "usedAs": "condition",
+    "usedBy": [ "EFFECT_SPSUMMON_PROC_G" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Special Summoned" }
@@ -162,8 +162,8 @@
   {
     "id": "fusionmatcon",
     "desc": "(?) Checks if Fusion Summon can happen in a custom Fusion Summon procedure.",
-    "used_as": "condition",
-    "used_by": [ "EFFECT_FUSION_MATERIAL" ],
+    "usedAs": "condition",
+    "usedBy": [ "EFFECT_FUSION_MATERIAL" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "mg", "type": "Group", "desc": "material group" },
@@ -175,8 +175,8 @@
   {
     "id": "summoncost",
     "desc": "Checks if a custom cost for Summoning can be paid.",
-    "used_as": "cost",
-    "used_by": [ "EFFECT_SUMMON_COST" ],
+    "usedAs": "cost",
+    "usedBy": [ "EFFECT_SUMMON_COST" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
@@ -187,8 +187,8 @@
   {
     "id": "attackcost",
     "desc": "Checks if a custom cost for attacking can be paid.",
-    "used_as": "cost",
-    "used_by": [ "EFFECT_ATTACK_COST" ],
+    "usedAs": "cost",
+    "usedBy": [ "EFFECT_ATTACK_COST" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
@@ -199,8 +199,8 @@
   {
     "id": "spsumcost",
     "desc": "Checks if a custom cost for Special Summoning can be paid.",
-    "used_as": "cost",
-    "used_by": [ "EFFECT_SPSUMMON_COST" ],
+    "usedAs": "cost",
+    "usedBy": [ "EFFECT_SPSUMMON_COST" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
@@ -212,8 +212,8 @@
   {
     "id": "ssconval",
     "desc": "Checks if Special Summon of the card can happen.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_SPSUMMON_CONDITION" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_SPSUMMON_CONDITION" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "se", "type": "Effect", "desc": "effect that caused Special Summon" },
@@ -227,8 +227,8 @@
   {
     "id": "ssproccon",
     "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
-    "used_as": "condition",
-    "used_by": [ "EFFECT_SPSUMMON_PROC" ],
+    "usedAs": "condition",
+    "usedBy": [ "EFFECT_SPSUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Special Summoned" },
@@ -242,8 +242,8 @@
   {
     "id": "sumproccon",
     "desc": "Checks if Normal/Tribute Summon can happen in a custom Summon procedure.",
-    "used_as": "condition",
-    "used_by": [ "EFFECT_SUMMON_PROC" ],
+    "usedAs": "condition",
+    "usedBy": [ "EFFECT_SUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Summoned" },
@@ -257,8 +257,8 @@
   {
     "id": "indelimit",
     "desc": "Checks if a card can be destroyed by a given card effect.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_INDESTRUCTABLE_EFFECT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_INDESTRUCTABLE_EFFECT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to destroy" },
@@ -269,8 +269,8 @@
   {
     "id": "indlimit",
     "desc": "Checks if a card can avoid its destruction by a given effect.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_INDESTRUCTABLE", "EFFECT_INDESTRUCTABLE_COUNT", "EFFECT_DESTROY_SUBSTITUTE"
     ],
     "args": [
@@ -284,8 +284,8 @@
   {
     "id": "untriblimit",
     "desc": "(?) Checks if a card cannot be Tributed.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_UNRELEASABLE_EFFECT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_UNRELEASABLE_EFFECT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to Tribute the card" },
@@ -297,8 +297,8 @@
   {
     "id": "tgimmunelimit",
     "desc": "Checks if a card can be targeted by a given card effect.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to target" },
@@ -309,8 +309,8 @@
   {
     "id": "tglimit",
     "desc": "Checks if a card can target another.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -321,8 +321,8 @@
   {
     "id": "matlimit",
     "desc": "Checks if a card can be used as material for a given Special Summon type.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_CANNOT_BE_RITUAL_MATERIAL", "EFFECT_CANNOT_BE_FUSION_MATERIAL",
       "EFFECT_CANNOT_BE_SYNCHRO_MATERIAL", "EFFECT_CANNOT_BE_XYZ_MATERIAL",
       "EFFECT_CANNOT_BE_LINK_MATERIAL", "EFFECT_CANNOT_BE_MATERIAL"
@@ -338,8 +338,8 @@
   {
     "id": "zonelimit",
     "desc": "Defines in which zones a card can be activated. This callback should return an integer whose set bits (1's) represent zones that can be used.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_TYPE_ACTIVATE", "EFFECT_FLAG_LIMIT_ZONE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_TYPE_ACTIVATE", "EFFECT_FLAG_LIMIT_ZONE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -355,8 +355,8 @@
   {
     "id": "actlimit",
     "desc": "Checks if a card should not be allowed to activate its effects.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CANNOT_ACTIVATE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CANNOT_ACTIVATE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, which might not be activated" },
@@ -367,8 +367,8 @@
   {
     "id": "actcostchk",
     "desc": "Checks if an applied activation cost can be paid.",
-    "used_as": "cost",
-    "used_by": [ "EFFECT_ACTIVATE_COST" ],
+    "usedAs": "cost",
+    "usedBy": [ "EFFECT_ACTIVATE_COST" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -379,8 +379,8 @@
   {
     "id": "actcosttg",
     "desc": "Checks if an activation cost should be applied to a given effect.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_ACTIVATE_COST" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_ACTIVATE_COST" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, which might have an applied cost" },
@@ -391,8 +391,8 @@
   {
     "id": "fieldtg",
     "desc": "Checks if a given card should be affected by the field effect.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_TYPE_FIELD" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_TYPE_FIELD" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
@@ -402,8 +402,8 @@
   {
     "id": "eimmunelimit",
     "desc": "Checks if the card should be immune to a given effect.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_IMMUNE_EFFECT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_IMMUNE_EFFECT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to affect the card" }
@@ -413,8 +413,8 @@
   {
     "id": "chainlimit",
     "desc": "Checks if effects can be chained. Used as argument to Duel.SetChainLimit.",
-    "used_as": "",
-    "used_by": [ "Duel.SetChainLimit" ],
+    "usedAs": "",
+    "usedBy": [ "Duel.SetChainLimit" ],
     "args": [
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "rp", "type": "number", "desc": "reason player" },
@@ -425,8 +425,8 @@
   {
     "id": "zonemaxlimit",
     "desc": "Defines the maximum number of zones that a player can use.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_MAX_MZONE", "EFFECT_MAX_SZONE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_MAX_MZONE", "EFFECT_MAX_SZONE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "fp", "type": "number", "desc": "field player, whose zones will be limited" },
@@ -438,8 +438,8 @@
   {
     "id": "forcemzonepval",
     "desc": "Defines in which zones a monster can be placed. This callback should return an integer whose set bits (1's) represent zones that can be used.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_FORCE_MZONE", "EFFECT_FLAG_PLAYER_TARGET" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_FORCE_MZONE", "EFFECT_FLAG_PLAYER_TARGET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "fp", "type": "number", "desc": "field player, whose zones will be limited" },
@@ -451,8 +451,8 @@
   {
     "id": "forcemzoneval",
     "desc": "Defines in which zones a monster can be placed. This callback should return an integer whose set bits (1's) represent zones that can be used.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_FORCE_MZONE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_FORCE_MZONE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "C", "type": "Card", "desc": "monster card to be checked" },
@@ -465,8 +465,8 @@
   {
     "id": "extratblimit",
     "desc": "(?)",
-    "used_as": "value",
-    "used_by": [ "EFFECT_EXTRA_RELEASE_NONSUM" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_EXTRA_RELEASE_NONSUM" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -478,8 +478,8 @@
   {
     "id": "chainfilter",
     "desc": "Checks which chain events should be counted by an activity counter.",
-    "used_as": "filter",
-    "used_by": [ "Duel.AddCustomActivityCounter", "ACTIVITY_CHAIN" ],
+    "usedAs": "filter",
+    "usedBy": [ "Duel.AddCustomActivityCounter", "ACTIVITY_CHAIN" ],
     "args": [
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -490,8 +490,8 @@
   {
     "id": "lpcostchange",
     "desc": "Returns a new value for an LP cost.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_LPCOST_CHANGE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_LPCOST_CHANGE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -503,8 +503,8 @@
   {
     "id": "atkallchk",
     "desc": "Checks which monsters can be attacked by a same card affected by EFFECT_ATTACK_ALL.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_ATTACK_ALL" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_ATTACK_ALL" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
@@ -514,8 +514,8 @@
   {
     "id": "atkctval",
     "desc": "Defines how many extra attacks a monster can perform.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_EXTRA_ATTACK", "EFFECT_EXTRA_ATTACK_MONSTER" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_EXTRA_ATTACK", "EFFECT_EXTRA_ATTACK_MONSTER" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "(?)" }
@@ -525,8 +525,8 @@
   {
     "id": "cantdiscardtg",
     "desc": "Checks if a given card cannot be discarded.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_DISCARD_HAND" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_DISCARD_HAND" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" },
@@ -538,8 +538,8 @@
   {
     "id": "sumlimit",
     "desc": "Checks if a player cannot Summon a given card.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_SUMMON" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_SUMMON" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Summoned" },
@@ -553,8 +553,8 @@
   {
     "id": "msetlimit",
     "desc": "Checks if a player cannot Set a given monster.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_MSET" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_MSET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Set" },
@@ -568,8 +568,8 @@
   {
     "id": "ssetlimit",
     "desc": "Checks if a player cannot Set a given Spell/Trap card.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_SSET" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_SSET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Set" },
@@ -580,8 +580,8 @@
   {
     "id": "spsumlimit",
     "desc": "Checks if a player cannot Special Summon a given monster.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_SPECIAL_SUMMON" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_SPECIAL_SUMMON" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Set" },
@@ -596,8 +596,8 @@
   {
     "id": "forcessposlimit",
     "desc": "Checks if a given card should have its Special Summon forced to a position.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_FORCE_SPSUMMON_POSITION" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_FORCE_SPSUMMON_POSITION" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card being Special Summoned" },
@@ -612,8 +612,8 @@
   {
     "id": "flipsumlimit",
     "desc": "Checks if a player cannot Flip Summon a given monster.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_FLIP_SUMMON" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_FLIP_SUMMON" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Flip Summoned" },
@@ -624,8 +624,8 @@
   {
     "id": "triblimit",
     "desc": "Checks if a player cannot Tribute a given card.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_RELEASE" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_RELEASE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card that might be Tributed" },
@@ -636,8 +636,8 @@
   {
     "id": "leftsscountval",
     "desc": "Returns how many remaining Special Summons a player can conduct.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_LEFT_SPSUMMON_COUNT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_LEFT_SPSUMMON_COUNT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -648,8 +648,8 @@
   {
     "id": "counterlimit",
     "desc": "Checks if a player cannot place counters on a given card.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_PLACE_COUNTER" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_PLACE_COUNTER" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card on which counters might be placed" },
@@ -660,8 +660,8 @@
   {
     "id": "togylimit",
     "desc": "Checks if a player cannot send a given card to the GY.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_TO_GRAVE" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_TO_GRAVE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" },
@@ -672,8 +672,8 @@
   {
     "id": "tohandlimit",
     "desc": "Checks if a player cannot send a given card to the hand.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_TO_HAND" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_TO_HAND" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" },
@@ -685,8 +685,8 @@
   {
     "id": "todecklimit",
     "desc": "Checks if a player cannot shuffle a given card into the deck.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_TO_DECK" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_TO_DECK" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" },
@@ -697,8 +697,8 @@
   {
     "id": "banishlimit",
     "desc": "Checks if a player cannot banish a given card.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_CANNOT_REMOVE" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_CANNOT_REMOVE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" },
@@ -711,8 +711,8 @@
   {
     "id": "negactlimit",
     "desc": "Checks if the activation of a card or effect cannot be negated.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CANNOT_INACTIVATE", "EFFECT_CANNOT_DISEFFECT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CANNOT_INACTIVATE", "EFFECT_CANNOT_DISEFFECT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "chid", "type": "number", "desc": "chain id" }
@@ -722,8 +722,8 @@
   {
     "id": "flagtarget",
     "desc": "Generic target callback with target flag. When the chk flag is 0, this callback must return if ",
-    "used_as": "target",
-    "used_by": [ "EFFECT_FLAG_CARD_TARGET" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_FLAG_CARD_TARGET" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -741,8 +741,8 @@
   {
     "id": "sscodecon",
     "desc": "Checks if a card code (name) should be changed/added/removed for a Special Summon.",
-    "used_as": "operation",
-    "used_by": [ "EFFECT_CHANGE_CODE", "EFFECT_ADD_CODE", "EFFECT_REMOVE_CODE" ],
+    "usedAs": "operation",
+    "usedBy": [ "EFFECT_CHANGE_CODE", "EFFECT_ADD_CODE", "EFFECT_REMOVE_CODE" ],
     "args": [
       { "id": "sc", "type": "Card", "desc": "Special Summon card" },
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
@@ -753,8 +753,8 @@
   {
     "id": "revdmglimit",
     "desc": "Checks if damage should be reversed to LP gain.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_REVERSE_DAMAGE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_REVERSE_DAMAGE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -767,8 +767,8 @@
   {
     "id": "refldmglimit",
     "desc": "Checks if damage should be reflected to opponent.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_REFLECT_DAMAGE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_REFLECT_DAMAGE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -782,8 +782,8 @@
   {
     "id": "changedmgval",
     "desc": "Returns a new value for effect damage.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CHANGE_DAMAGE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CHANGE_DAMAGE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect" },
@@ -797,8 +797,8 @@
   {
     "id": "sumproctg",
     "desc": "Checks if Normal/Tribute Summon can happen in a custom Summon procedure.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_SUMMON_PROC" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_SUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -819,8 +819,8 @@
   {
     "id": "sumprocop",
     "desc": "Performs a custom Summon procedure.",
-    "used_as": "operation",
-    "used_by": [ "EFFECT_SUMMON_PROC" ],
+    "usedAs": "operation",
+    "usedBy": [ "EFFECT_SUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -840,8 +840,8 @@
   {
     "id": "ssproctg",
     "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_SPSUMMON_PROC" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_SPSUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -862,8 +862,8 @@
   {
     "id": "ssprocop",
     "desc": "Performs a custom Special Summon procedure.",
-    "used_as": "target",
-    "used_by": [ "EFFECT_SPSUMMON_PROC" ],
+    "usedAs": "target",
+    "usedBy": [ "EFFECT_SPSUMMON_PROC" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
@@ -883,8 +883,8 @@
   {
     "id": "contactop",
     "desc": "Performs a Contact Fusion Summon. Passed as third argument to Fusion.AddContactProc.",
-    "used_as": "operation",
-    "used_by": [ "Fusion.AddContactProc" ],
+    "usedAs": "operation",
+    "usedBy": [ "Fusion.AddContactProc" ],
     "args": [
       { "id": "mg", "type": "Group", "desc": "material group, cards used as material" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
@@ -893,8 +893,8 @@
   {
     "id": "changebtdmgval",
     "desc": "Returns a new value for battle damage.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_CHANGE_BATTLE_DAMAGE" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_CHANGE_BATTLE_DAMAGE" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "rp", "type": "number", "desc": "reason player" }
@@ -904,8 +904,8 @@
   {
     "id": "matcheck",
     "desc": "Runs a check on materials used for a Summon.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_MATERIAL_CHECK" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_MATERIAL_CHECK" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "Summoned card" }
@@ -914,8 +914,8 @@
   {
     "id": "extrasumcount",
     "desc": "Returns three values for an extra Normal Summon/Set: minimum number of Tributes required, zones to which the monster can be Summoned, zones from which monsters can be Tributed.",
-    "used_as": "value",
-    "used_by": [ "EFFECT_EXTRA_SUMMON_COUNT", "EFFECT_EXTRA_SET_COUNT" ],
+    "usedAs": "value",
+    "usedBy": [ "EFFECT_EXTRA_SUMMON_COUNT", "EFFECT_EXTRA_SET_COUNT" ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Summoned" }
@@ -925,8 +925,8 @@
   {
     "id": "ecchk",
     "desc": "Checks if the effect should be applied.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_EXTRA_RITUAL_MATERIAL", "EFFECT_EXTRA_FUSION_MATERIAL",
       "EFFECT_FUSION_SUBSTITUTE", "EFFECT_NONTUNER", "EFFECT_DEFENSE_ATTACK"
     ],
@@ -939,8 +939,8 @@
   {
     "id": "ecval",
     "desc": "Returns a value to be used in the context of the effect type.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_ADD_CODE", "EFFECT_CHANGE_CODE", "EFFECT_REMOVE_CODE",
       "EFFECT_ADD_SETCODE", "EFFECT_CHANGE_SETCODE", "EFFECT_ADD_TYPE",
       "EFFECT_CHANGE_TYPE", "EFFECT_REMOVE_TYPE", "EFFECT_ADD_ATTRIBUTE",
@@ -967,8 +967,8 @@
   {
     "id": "eval",
     "desc": "Returns a value to be used in the context of the effect type.",
-    "used_as": "value",
-    "used_by": [
+    "usedAs": "value",
+    "usedBy": [
       "EFFECT_TO_GRAVE_REDIRECT", "EFFECT_DISABLE_CHAIN", "EFFECT_CHANGE_ENVIRONMENT",
       "EFFECT_MONSTER_SSET", "EFFECT_HAND_LIMIT", "EFFECT_SET_POSITION",
       "EFFECT_USE_EXTRA_SZONE", "EFFECT_USE_EXTRA_MZONE", "EFFECT_COUNTER_LIMIT",

@@ -11,7 +11,7 @@
         "type": "array",
         "items": {
           "type": "object",
-          "required": [ "id", "desc", "args" ],
+          "required": [ "id", "desc" ],
           "properties": {
             "id": { "type": "string" },
             "desc": { "type": "string" },

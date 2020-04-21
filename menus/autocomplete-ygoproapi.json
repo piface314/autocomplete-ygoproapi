@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Autocomplete YGOPro API",
+          "submenu": [
+            {
+              "label": "Update",
+              "command": "autocomplete-ygoproapi:update"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

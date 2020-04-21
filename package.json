@@ -26,19 +26,34 @@
   "configSchema": {
     "matchCaseForConstants": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "description": "If enabled, constants will only be suggested if what is being typed matches their case - usually upper case."
     },
     "suggestOptionalArguments": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "description": "If optional arguments should appear in snippets."
     },
     "showReturnTypes": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "description": "Show return types in suggestions."
     },
     "useSpacing": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "description": "Use spaces after commas in callbacks, methods and globals snippets."
+    },
+    "updateFrequency": {
+      "type": "string",
+      "default": "Weekly",
+      "enum": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Never"
+      ],
+      "description": "How often should automatic updates happen."
     }
   },
   "dependencies": {
