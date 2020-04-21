@@ -42,6 +42,7 @@
     }
   },
   "dependencies": {
-    "dapetcu21-luaparse": "^0.2.1"
+    "dapetcu21-luaparse": "^0.2.1",
+    "papaparse": "^5.2.0"
   }
 }

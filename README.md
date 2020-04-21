@@ -15,3 +15,5 @@ In the near future, this package should be up to date and targeted only for EDOP
 - [x] Infers type from method return types, callback signatures and identifier name.
 
 ![Autocompletion demo](assets/example1.gif)
+
+You can search for callbacks by their usage. When defining a function, type `$` as the first character, then write an `EFFECT_` constant (or similar) to find callbacks used by those effect types/codes.
