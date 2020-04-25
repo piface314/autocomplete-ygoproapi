@@ -1,6 +1,6 @@
-# EDOPro API Autocomplete extension for VSCode
+# EDOPro API Autocomplete extension for Atom
 
-This is an autocomplete extension for VSCode that covers the scripting API of the bleeding-edge YGOPro client fork, [EDOPro](https://github.com/edo9300/edopro/).
+This is an autocomplete extension for Atom that covers the scripting API of the bleeding-edge YGOPro client fork, [EDOPro](https://github.com/edo9300/edopro/).
 
 ## Features
 
