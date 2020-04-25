@@ -4,10 +4,10 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Autocomplete YGOPro API",
+          "label": "Autocomplete EDOPro API",
           "submenu": [
             {
-              "label": "Update",
+              "label": "Update Database",
               "command": "autocomplete-ygoproapi:update"
             }
           ]

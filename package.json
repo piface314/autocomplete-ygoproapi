@@ -2,7 +2,7 @@
   "name": "autocomplete-ygoproapi",
   "main": "./lib/index",
   "version": "0.5.1",
-  "description": "Autocomplete provider for YGOPro API.",
+  "description": "Autocomplete provider for EDOPro API.",
   "keywords": [
     "ygopro",
     "autocomplete",
